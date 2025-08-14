@@ -91,57 +91,67 @@ const ContactSection = () => {
             {/* Left Column - Contact Info */}
             <div className="flex-1 max-w-md">
               {/* Contact Details */}
-              <Card className="bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-xl shadow-slate-200/50 rounded-2xl">
-                <CardHeader>
+              <Card className="bg-white/90 backdrop-blur-sm border border-slate-200 shadow-lg rounded-xl overflow-hidden">
+                <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-slate-200/50">
                   <CardTitle className="flex items-center gap-3 text-slate-800">
                     <Mail className="h-5 w-5 text-blue-600" />
-                    Contact Information
+                    <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                      Contact Information
+                    </span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-slate-50/80 hover:bg-slate-100/80 transition-colors border border-slate-200/50">
-                    <Mail className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                <CardContent className="space-y-4 p-6">
+                  <div className="flex items-start gap-4 p-4 rounded-lg bg-white hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm hover:shadow-md">
+                    <div className="p-2 bg-blue-100/50 rounded-lg text-blue-600">
+                      <Mail className="h-5 w-5" />
+                    </div>
                     <div>
-                      <div className="text-sm font-medium text-slate-800">
+                      <div className="text-sm font-medium text-slate-500 mb-1">
                         Email
                       </div>
-                      <div className="text-sm text-slate-600">
+                      <div className="text-base font-medium text-slate-800 hover:text-blue-600 transition-colors">
                         vijay.dvaswani@gmail.com
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-slate-50/80 hover:bg-slate-100/80 transition-colors border border-slate-200/50">
-                    <Phone className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                  <div className="flex items-start gap-4 p-4 rounded-lg bg-white hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm hover:shadow-md">
+                    <div className="p-2 bg-green-100/50 rounded-lg text-green-600">
+                      <Phone className="h-5 w-5" />
+                    </div>
                     <div>
-                      <div className="text-sm font-medium text-slate-800">
+                      <div className="text-sm font-medium text-slate-500 mb-1">
                         Phone
                       </div>
-                      <div className="text-sm text-slate-600">
+                      <div className="text-base font-medium text-slate-800 hover:text-green-600 transition-colors">
                         +92-3332532999
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-slate-50/80 hover:bg-slate-100/80 transition-colors border border-slate-200/50">
-                    <MapPin className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                  <div className="flex items-start gap-4 p-4 rounded-lg bg-white hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm hover:shadow-md">
+                    <div className="p-2 bg-purple-100/50 rounded-lg text-purple-600">
+                      <MapPin className="h-5 w-5" />
+                    </div>
                     <div>
-                      <div className="text-sm font-medium text-slate-800">
+                      <div className="text-sm font-medium text-slate-500 mb-1">
                         Location
                       </div>
-                      <div className="text-sm text-slate-600">
+                      <div className="text-base font-medium text-slate-800 hover:text-purple-600 transition-colors">
                         Karachi, Pakistan
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-slate-50/80 hover:bg-slate-100/80 transition-colors border border-slate-200/50">
-                    <Calendar className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                  <div className="flex items-start gap-4 p-4 rounded-lg bg-white hover:bg-slate-50 transition-colors border border-slate-200 shadow-sm hover:shadow-md">
+                    <div className="p-2 bg-amber-100/50 rounded-lg text-amber-600">
+                      <Calendar className="h-5 w-5" />
+                    </div>
                     <div>
-                      <div className="text-sm font-medium text-slate-800">
+                      <div className="text-sm font-medium text-slate-500 mb-1">
                         Availability
                       </div>
-                      <div className="text-sm text-slate-600">
+                      <div className="text-base font-medium text-slate-800 hover:text-amber-600 transition-colors">
                         Open to opportunities
                       </div>
                     </div>
@@ -150,13 +160,16 @@ const ContactSection = () => {
               </Card>
 
               {/* Social Links */}
-              <Card className="bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-xl shadow-slate-200/50 rounded-2xl mt-8">
-                <CardHeader>
-                  <CardTitle className="text-slate-800">
-                    Professional Links
+              <Card className="bg-white/90 backdrop-blur-sm border border-slate-200 shadow-lg rounded-xl overflow-hidden mt-8">
+                <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-slate-200/50">
+                  <CardTitle className="flex items-center gap-3 text-slate-800">
+                    <Linkedin className="h-5 w-5 text-blue-600" />
+                    <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                      Professional Links
+                    </span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-3">
+                <CardContent className="space-y-3 p-6">
                   <a
                     href="https://www.linkedin.com/in/vijaykumarvaswani/"
                     target="_blank"
@@ -164,10 +177,12 @@ const ContactSection = () => {
                     className="block"
                   >
                     <Button
-                      variant="gradient"
-                      className="w-full justify-start gap-3"
+                      variant="outline"
+                      className="w-full justify-start gap-3 h-12 hover:bg-blue-50 border-slate-300 hover:border-blue-300 text-slate-700 hover:text-blue-600 transition-all"
                     >
-                      <Linkedin className="h-4 w-4 text-white" />
+                      <div className="p-1 bg-blue-100 rounded-md text-blue-600">
+                        <Linkedin className="h-4 w-4" />
+                      </div>
                       LinkedIn Profile
                     </Button>
                   </a>
@@ -179,10 +194,12 @@ const ContactSection = () => {
                     className="block"
                   >
                     <Button
-                      variant="gradient"
-                      className="w-full justify-start gap-3"
+                      variant="outline"
+                      className="w-full justify-start gap-3 h-12 hover:bg-slate-50 border-slate-300 hover:border-slate-400 text-slate-700 hover:text-slate-800 transition-all"
                     >
-                      <Github className="h-4 w-4 text-white" />
+                      <div className="p-1 bg-slate-100 rounded-md text-slate-600">
+                        <Github className="h-4 w-4" />
+                      </div>
                       GitHub Portfolio
                     </Button>
                   </a>
@@ -194,8 +211,13 @@ const ContactSection = () => {
                     rel="noopener noreferrer"
                     className="block"
                   >
-                    <Button variant="gradient" className="w-full gap-3">
-                      <Download className="h-4 w-4 text-white" />
+                    <Button
+                      variant="outline"
+                      className="w-full justify-start gap-3 h-12 hover:bg-green-50 border-slate-300 hover:border-green-300 text-slate-700 hover:text-green-600 transition-all"
+                    >
+                      <div className="p-1 bg-green-100 rounded-md text-green-600">
+                        <Download className="h-4 w-4" />
+                      </div>
                       Download Resume
                     </Button>
                   </a>
@@ -205,19 +227,20 @@ const ContactSection = () => {
 
             {/* Right Column - Contact Form */}
             <div className="flex-1 max-w-2xl">
-              <Card className="bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-xl shadow-slate-200/50 rounded-2xl h-full flex flex-col">
-                <CardHeader>
+              <Card className="bg-white/90 backdrop-blur-sm border border-slate-200 shadow-lg rounded-xl overflow-hidden h-full flex flex-col">
+                <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 border-b border-slate-200/50">
                   <CardTitle className="flex items-center gap-3 text-slate-800">
                     <Send className="h-5 w-5 text-blue-600" />
-                    Send a Message
+                    <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                      Send a Message
+                    </span>
                   </CardTitle>
                   <p className="text-slate-600">
                     Have a project in mind or want to discuss QA opportunities?
                     I&apos;d love to hear from you!
                   </p>
                 </CardHeader>
-                <CardContent className="flex-1 pb-6">
-                  {/* Extract the form to a client component */}
+                <CardContent className="flex-1 p-6">
                   <ContactForm />
                 </CardContent>
               </Card>
