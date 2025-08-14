@@ -1,42 +1,27 @@
-"use client";
-import { useEffect, useRef } from "react";
-import Lenis from "@studio-freight/lenis";
+// app/LenisProvider.tsx (Client Component)
+'use client'
 
-interface LenisProviderProps {
-  children: React.ReactNode;
-}
+import { useEffect } from 'react'
+import Lenis from '@studio-freight/lenis'
 
-const LenisProvider = ({ children }: LenisProviderProps) => {
-  const lenisRef = useRef<Lenis | null>(null);
-
+export default function LenisProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    // Initialize Lenis with updated options
-    lenisRef.current = new Lenis({
-      duration: 1.2,
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: "vertical", // renamed from 'direction'
-      gestureOrientation: "vertical", // renamed from 'gestureDirection'
-      smoothWheel: true, // replaces 'smooth'
-      syncTouch: false, // replaces 'smoothTouch'
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
-      infinite: false,
-    });
+    const lenis = new Lenis({
+      lerp: 0.1,
+      smoothWheel: true
+    })
 
-    // RAF loop for Lenis
-    function raf(time: number) {
-      lenisRef.current?.raf(time);
-      requestAnimationFrame(raf);
+    const raf = (time: number) => {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
     }
-    requestAnimationFrame(raf);
 
-    // Cleanup
+    requestAnimationFrame(raf)
+
     return () => {
-      lenisRef.current?.destroy();
-    };
-  }, []);
+      lenis.destroy()
+    }
+  }, [])
 
-  return <>{children}</>;
-};
-
-export default LenisProvider;
+  return <>{children}</>
+}
