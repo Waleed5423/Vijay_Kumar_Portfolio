@@ -52,20 +52,20 @@ const Project2Section = () => {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating Balls */}
-        <div className="absolute top-1/4 left-1/3 w-6 h-6 bg-blue-400/20 rounded-full animate-float1"></div>
-        <div className="absolute top-1/2 right-1/4 w-8 h-8 bg-indigo-400/20 rounded-full animate-float2"></div>
-        <div className="absolute bottom-1/3 left-2/3 w-5 h-5 bg-purple-400/20 rounded-full animate-float3"></div>
-        <div className="absolute top-3/4 right-1/5 w-7 h-7 bg-blue-400/15 rounded-full animate-float4"></div>
-        <div className="absolute bottom-1/5 left-1/4 w-6 h-6 bg-indigo-400/15 rounded-full animate-float5"></div>
-        <div className="absolute top-1/6 right-2/3 w-5 h-5 bg-purple-400/15 rounded-full animate-float6"></div>
-        <div className="absolute top-2/3 left-1/6 w-4 h-4 bg-pink-400/20 rounded-full animate-float7"></div>
-        <div className="absolute bottom-1/2 right-1/3 w-9 h-9 bg-teal-400/20 rounded-full animate-float8"></div>
-        <div className="absolute top-1/5 left-2/5 w-7 h-7 bg-yellow-400/15 rounded-full animate-float9"></div>
-        <div className="absolute bottom-2/5 right-2/5 w-6 h-6 bg-rose-400/15 rounded-full animate-float10"></div>
-        <div className="absolute top-4/5 left-2/3 w-5 h-5 bg-emerald-400/15 rounded-full animate-float11"></div>
-        <div className="absolute bottom-1/4 right-1/6 w-8 h-8 bg-cyan-400/15 rounded-full animate-float12"></div>
-        <div className="absolute top-36 left-20 w-68 h-68 bg-blue-400/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-36 right-20 w-92 h-92 bg-indigo-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/4 left-1/3 w-6 h-6 bg-blue-400/20 rounded-full animate-float1 shadow-sm"></div>
+        <div className="absolute top-1/2 right-1/4 w-8 h-8 bg-indigo-400/20 rounded-full animate-float2 shadow-sm"></div>
+        <div className="absolute bottom-1/3 left-2/3 w-5 h-5 bg-purple-400/20 rounded-full animate-float3 shadow-sm"></div>
+        <div className="absolute top-3/4 right-1/5 w-7 h-7 bg-blue-400/15 rounded-full animate-float4 shadow-sm"></div>
+        <div className="absolute bottom-1/5 left-1/4 w-6 h-6 bg-indigo-400/15 rounded-full animate-float5 shadow-sm"></div>
+        <div className="absolute top-1/6 right-2/3 w-5 h-5 bg-purple-400/15 rounded-full animate-float6 shadow-sm"></div>
+        <div className="absolute top-2/3 left-1/6 w-4 h-4 bg-pink-400/20 rounded-full animate-float7 shadow-sm"></div>
+        <div className="absolute bottom-1/2 right-1/3 w-9 h-9 bg-teal-400/20 rounded-full animate-float8 shadow-sm"></div>
+        <div className="absolute top-1/5 left-2/5 w-7 h-7 bg-yellow-400/15 rounded-full animate-float9 shadow-sm"></div>
+        <div className="absolute bottom-2/5 right-2/5 w-6 h-6 bg-rose-400/15 rounded-full animate-float10 shadow-sm"></div>
+        <div className="absolute top-4/5 left-2/3 w-5 h-5 bg-emerald-400/15 rounded-full animate-float11 shadow-sm"></div>
+        <div className="absolute bottom-1/4 right-1/6 w-8 h-8 bg-cyan-400/15 rounded-full animate-float12 shadow-sm"></div>
+        <div className="absolute top-36 left-20 w-68 h-68 bg-blue-400/10 rounded-full blur-3xl animate-pulse shadow-xl"></div>
+        <div className="absolute bottom-36 right-20 w-92 h-92 bg-indigo-400/10 rounded-full blur-3xl animate-pulse delay-1000 shadow-xl"></div>
       </div>
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
@@ -83,6 +83,7 @@ const Project2Section = () => {
         @keyframes float10 { 0%, 100% { transform: translate(0,0) rotate(0deg);} 50% { transform: translate(30px,25px) rotate(-3deg);} }
         @keyframes float11 { 0%, 100% { transform: translate(0,0) rotate(0deg);} 50% { transform: translate(-25px,-30px) rotate(7deg);} }
         @keyframes float12 { 0%, 100% { transform: translate(0,0) rotate(0deg);} 50% { transform: translate(24px,20px) rotate(-4deg);} }
+        @keyframes cardHover { 0% { transform: translateY(0); } 50% { transform: translateY(-5px); } 100% { transform: translateY(0); } }
 
         .animate-float1 { animation: float1 19s ease-in-out infinite; }
         .animate-float2 { animation: float2 14s ease-in-out infinite; }
@@ -96,16 +97,33 @@ const Project2Section = () => {
         .animate-float10 { animation: float10 22s ease-in-out infinite; }
         .animate-float11 { animation: float11 15s ease-in-out infinite; }
         .animate-float12 { animation: float12 24s ease-in-out infinite; }
+        
+        .project-card {
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .project-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          animation: cardHover 1s ease-in-out;
+        }
+        .tag-hover {
+          transition: all 0.2s ease;
+        }
+        .tag-hover:hover {
+          transform: scale(1.05);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
       `}</style>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4 animate-fadeIn">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
               Project Portfolio
             </span>
           </h2>
-          <p className="text-slate-600 max-w-3xl mx-auto text-lg">
+          <p className="text-slate-600 max-w-3xl mx-auto text-lg animate-fadeIn delay-100">
             Selected projects showcasing my expertise in quality assurance and
             test automation across various domains.
           </p>
@@ -113,7 +131,12 @@ const Project2Section = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <div
+              key={project.id}
+              className="project-card hover:z-10 transition-all duration-300"
+            >
+              <ProjectCard project={project} />
+            </div>
           ))}
         </div>
 
@@ -121,10 +144,10 @@ const Project2Section = () => {
           <Link href="/projects">
             <Button
               variant="gradient"
-              className="transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className="transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 shadow-md"
             >
               View Complete Project Archive
-              <ArrowRight className="ml-2 h-4 w-4" />
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
           </Link>
         </div>
