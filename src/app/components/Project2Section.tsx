@@ -1,46 +1,90 @@
-import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ProjectCard } from "./ProjectCard";
+import img from "../../app/media/image0.png";
+import img2 from "../../app/media/image1.png";
+import img3 from "../../app/media/image2.png";
+import img4 from "../../app/media/image3.png";
+import img5 from "../../app/media/image4.png";
 
 const Project2Section = () => {
   const projects = [
     {
       id: 1,
-      title: "AI-Powered Testing Platform",
+      title: "Argaam – Saudi Financial Markets & News",
       description:
-        "Developed an intelligent testing framework that uses machine learning to predict high-risk areas of applications, reducing testing time by 40% while maintaining 99% defect detection rate.",
-      tags: ["AI/ML", "Python", "Selenium", "Flask", "AWS"],
-      link: "https://demo-ai-testing.com",
-      image: "/project-ai-testing.jpg",
+        "Argaam (English) is a premier Saudi-based financial news portal offering real-time market data, analysis, interviews, and coverage of stocks across the Gulf region.",
+      tags: [
+        "Test Automation",
+        "Web Testing",
+        "Selenium",
+        "Flask",
+        "Performance Testing",
+      ],
+      link: "https://www.argaam.com/en",
+      image: img,
     },
+
     {
       id: 2,
-      title: "Financial Services Automation Suite",
+      title: "Argaam Charts – Financial Market Charts (Arabic)",
       description:
-        "Created an end-to-end test automation solution for a fintech platform, covering web, mobile and API testing with integrated security validation.",
-      tags: ["FinTech", "Cypress", "Appium", "Postman", "OAuth"],
-      link: "https://fintech-automation-demo.com",
-      image: "/project-fintech.jpg",
+        "Argaam Charts (Arabic) provides interactive real-time financial charts and market analytics for Gulf and Saudi stocks.",
+      tags: [
+        "Test Automation",
+        "Web Testing",
+        "Performance Testing",
+        "Selenium",
+        "Flask",
+      ],
+      link: "https://www.argaamcharts.com/ar/1120",
+      image: img2,
     },
     {
       id: 3,
-      title: "E-commerce Quality Gateway",
+      title: "Contractor Foreman – Construction Management Software",
       description:
-        "Implemented a comprehensive quality control system for a high-traffic e-commerce platform that reduced production incidents by 65%.",
-      tags: ["E-commerce", "JMeter", "SQL", "Jenkins", "Kubernetes"],
-      link: "https://ecommerce-quality-demo.com",
-      image: "/project-ecommerce.jpg",
+        "Contractor Foreman is an all-in-one, cloud-based construction management suite offering project, financial, document, and team tracking tools.",
+      tags: [
+        "API Testing",
+        "Integration Testing",
+        "Load Testing",
+        "Selenium",
+        "Performance Testing",
+      ],
+      link: "https://contractorforeman.com/",
+      image: img3,
     },
     {
       id: 4,
-      title: "CRM Testing Framework",
+      title: "JOYA! – Social Loyalty & Gifting Platform",
       description:
-        "Built a modular testing framework for a SaaS CRM platform that enabled parallel test execution across multiple environments.",
-      tags: ["SaaS", "TestNG", "Docker", "CI/CD", "Allure"],
-      link: "https://crm-testing-demo.com",
-      image: "/project-crm.jpg",
+        "JOYA! is a social loyalty platform enabling users to earn and redeem points, share experiences, and send gifts via social networking for partner stores.",
+      tags: [
+        "Test Automation",
+        "UI Testing",
+        "Functional Testing",
+        "Selenium",
+        "CRM Testing",
+      ],
+      link: "https://oyah.com/index.html",
+      image: img5,
+    },
+    {
+      id: 5,
+      title: "BuyHouseEZ – Non-Conventional Home Financing",
+      description:
+        "BuyHouseEZ enables self-employed individuals and ITIN holders with poor credit to secure mortgages through alternative lending solutions.",
+      tags: [
+        "API Testing",
+        "Security Testing",
+        "Automation Testing",
+        "Selenium",
+        "Performance Testing",
+      ],
+      link: "https://buyhouseez.com/",
+      image: img4,
     },
   ];
 
