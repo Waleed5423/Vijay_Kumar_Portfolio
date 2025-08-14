@@ -261,7 +261,7 @@ const Workflow = () => {
         </div> */}
 
         {/* Call to Action */}
-        <div
+        {/* <div
           className="text-center mt-16 animate-fadeInUp"
           style={{ animationDelay: "1.2s" }}
         >
@@ -273,7 +273,7 @@ const Workflow = () => {
               Get in Touch
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

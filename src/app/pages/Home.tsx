@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Workflow from "../components/Workflow";
 import Project2Section from "../components/Project2Section";
 import SkillsSection from "../components/SkillsSection";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Experience />
       <Project2Section />
       <Workflow />
+      <Testimonials />
       <BugHunterGame />
       <ContactSection />
     </main>
