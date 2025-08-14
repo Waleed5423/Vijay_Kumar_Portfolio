@@ -176,7 +176,7 @@ const Project2Section = () => {
         }
       `}</style>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7.5xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4 animate-fadeIn">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -189,7 +189,7 @@ const Project2Section = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 md:my-4">
           {projects.map((project) => (
             <div
               key={project.id}
