@@ -4,12 +4,18 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Download } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
-import { navItems } from "./navigation-data";
+import { navItems as defaultNavItems } from "./navigation-data";
+
+// Define the type for navigation items
+interface NavItem {
+  label: string;
+  href: string;
+}
 
 export default function NavigationClient({
-  navItems,
+  navItems = defaultNavItems as NavItem[], // Type assertion
 }: {
-  navItems: typeof navItems;
+  navItems?: NavItem[];
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

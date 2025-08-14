@@ -141,7 +141,7 @@ const Project2Section = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="/projects">
+          <Link href="/project">
             <Button
               variant="gradient"
               className="transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 shadow-md"
