@@ -5,16 +5,16 @@ const Experience = () => {
   const experiences = [
     {
       company: "Argaam.com",
-      position: "AI/ML Engineer",
+      position: "Senior SQA Engineer",
       duration: "Aug 2023 – Present",
       location: "Saudi Arabia (Remote)",
       description:
-        "Leading development of GenAI tools and LLM solutions. Specializing in RAG systems, time series analysis, and AWS cloud deployments for financial technology applications.",
+        "Leading quality assurance initiatives for financial data platforms. Specializing in test automation, performance testing, and CI/CD pipeline integration for financial technology applications.",
       achievements: [
-        "Developed GenAI tools for financial data analysis",
-        "Fine-tuned LLMs for domain-specific applications",
-        "Implemented RAG (Retrieval-Augmented Generating) systems",
-        "Designed scalable solutions on AWS infrastructure",
+        "Developed comprehensive test automation frameworks",
+        "Implemented performance testing strategies for high-traffic financial applications",
+        "Integrated QA processes into CI/CD pipelines",
+        "Designed scalable test infrastructure on AWS",
       ],
       bgColor: "bg-green-50", // Light green
       borderColor: "border-green-100",
@@ -22,32 +22,32 @@ const Experience = () => {
     },
     {
       company: "Intellectuals",
-      position: "AI Engineer",
+      position: "SQA Engineer",
       duration: "2021 – 2023",
       location: "Karachi, Pakistan",
       description:
-        "Developed end-to-end AI solutions focusing on Computer Vision and NLP applications. Built robust model pipelines and optimized hyperparameters for production environments.",
+        "Developed end-to-end testing solutions focusing on both manual and automated testing approaches. Built robust test pipelines and optimized testing processes for production environments.",
       achievements: [
-        "Built Computer Vision models for real-world applications",
-        "Created automated model pipelines",
-        "Developed NLP solutions for test processing",
-        "Optimized hyperparameters for improved performance",
+        "Created automated test suites for web applications",
+        "Implemented comprehensive regression testing strategies",
+        "Developed API testing solutions for backend services",
+        "Optimized test execution times through parallel testing",
       ],
       bgColor: "bg-indigo-50", // Light indigo
       borderColor: "border-indigo-100",
       shadowColor: "shadow-indigo-100/40",
     },
     {
-      company: "Elsevier",
-      position: "Peer Reviewer",
+      company: "Contractor Foreman",
+      position: "Quality Assurance Consultant",
       duration: "May 2022 – Present",
       location: "Remote",
       description:
-        "Reviewing research papers for high-impact journals including Acta Psychologica and Expert Systems With Applications. Ensuring quality and rigor in AI/ML research publications.",
+        "Providing QA consulting services for construction management software, ensuring quality and reliability in enterprise software applications.",
       achievements: [
-        "Journal Reviewer for Acta Psychologica",
-        "Expert Systems With Applications Reviewer",
-        "Contributing to academic excellence in AI research",
+        "Established QA best practices for development team",
+        "Implemented test automation for critical workflows",
+        "Reduced production defects by 40% through improved testing",
       ],
       bgColor: "bg-orange-50", // Light orange
       borderColor: "border-orange-100",
@@ -58,7 +58,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative py-20 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
+      className="relative py-17 pb-8 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -126,7 +126,8 @@ const Experience = () => {
             </span>
           </h2>
           <p className="text-slate-600 max-w-3xl mx-auto text-lg animate-fadeIn delay-100">
-            My journey through various roles in AI/ML engineering and research.
+            My journey through various roles in Software Quality Assurance and
+            Test Engineering.
           </p>
         </div>
 
@@ -188,7 +189,7 @@ const Experience = () => {
 
                     <div className="mt-6">
                       <h4 className="text-lg font-semibold text-slate-800 mb-3 group-hover:text-slate-900 transition-colors duration-300">
-                        Key Achievements:
+                        Key Responsibilities:
                       </h4>
                       <ul className="space-y-2">
                         {exp.achievements.map((achievement, idx) => (

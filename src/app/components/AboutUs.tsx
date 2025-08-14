@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section
       id="about"
-      className="relative pt-14 pb-20 overflow-hidden bg-gradient-to-br from-indigo-5 0 via-blue-50/30 to-indigo-50/50"
+      className="relative pt-16 pb-10 overflow-hidden bg-gradient-to-br from-indigo-5 0 via-blue-50/30 to-indigo-50/50"
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/6 left-2/3 w-7 h-7 bg-blue-400/20 rounded-full animate-float1 shadow-lg shadow-blue-200/30"></div>

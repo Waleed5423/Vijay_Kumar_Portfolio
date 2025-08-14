@@ -10,7 +10,6 @@ import { ArrowRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import { motion } from "framer-motion";
 
 interface ProjectCardProps {
   project: {

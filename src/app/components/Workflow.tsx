@@ -77,7 +77,7 @@ const Workflow = () => {
   return (
     <section
       id="workflow"
-      className="relative py-24 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/40 to-indigo-50/30"
+      className="relative pt-17 pb-10 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/40 to-indigo-50/30"
     >
       {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -234,9 +234,9 @@ const Workflow = () => {
           </div>
         </div>
 
-        {/* Enhanced Mobile Timeline */}
+        {/* Enhanced Mobile Timeline
         <div
-          className="lg:hidden mt-12 animate-fadeInUp"
+          className="md:hidden mt-12 animate-fadeInUp"
           style={{ animationDelay: "1.1s" }}
         >
           <div className="flex justify-center mb-6">
@@ -258,7 +258,7 @@ const Workflow = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Call to Action */}
         <div

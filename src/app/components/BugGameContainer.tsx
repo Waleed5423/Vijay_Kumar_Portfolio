@@ -5,7 +5,7 @@ const BugGameContainer = () => {
   return (
     <section
       id="game"
-      className="relative py-10 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-100/40 to-indigo-50/20"
+      className="relative pt-17 pb-10 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-100/40 to-indigo-50/20"
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-blue-400/20 rounded-full animate-float1"></div>

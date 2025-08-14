@@ -16,7 +16,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative py-20 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
+      className="relative pt-17 pb-10 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">

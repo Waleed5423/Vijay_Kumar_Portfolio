@@ -67,13 +67,13 @@ const SkillsSection = () => {
     },
   ];
 
-  const certifications = [
-    "ISTQB Foundation Level Certified",
-    "Agile Testing Certification",
-    "Selenium WebDriver Certification",
-    "AWS Cloud Practitioner",
-    "Scrum Master Certification",
-  ];
+  // const certifications = [
+  //   "ISTQB Foundation Level Certified",
+  //   "Agile Testing Certification",
+  //   "Selenium WebDriver Certification",
+  //   "AWS Cloud Practitioner",
+  //   "Scrum Master Certification",
+  // ];
 
   const achievements = [
     {
@@ -113,7 +113,7 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="relative py-20 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
+      className="relative py-17 pb-10 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -225,7 +225,7 @@ const SkillsSection = () => {
                     </div>
                     <Progress
                       value={skill.level}
-                      className={`h-2 bg-slate-200/70 group-hover:bg-gray-400 transition-colors duration-300 bg-gray-300 rounded-full animate-progress-pulse`}
+                      className={`h-2 bg-slate-200/70 group-hover:bg-gray-400 transition-colors duration-300 rounded-full animate-progress-pulse`}
                     />
                   </div>
                 ))}

@@ -15,6 +15,10 @@ import img2 from "../../media/image1.png";
 import img3 from "../../media/image2.png";
 import img4 from "../../media/image3.png";
 import img5 from "../../media/image4.png";
+import img6 from "../../media/image5.png";
+import img7 from "../../media/image6.png";
+import img8 from "../../media/image7.png";
+import img9 from "../../media/image8.png";
 
 const ProjectsPage = () => {
   const projects = [
@@ -92,6 +96,66 @@ const ProjectsPage = () => {
       ],
       link: "https://buyhouseez.com/",
       image: img4,
+    },
+    {
+      id: 6,
+      title: "HERFA – Build Smarter, Build Faster with Digital Construction",
+      description:
+        "HERFA is an online construction platform for contractors, builders, and project managers, offering real-time project tracking, material management, collaboration tools, and automated estimates to boost efficiency and cut costs.",
+      tags: [
+        "API Testing",
+        "UI Testing",
+        "Integration Testing",
+        "Selenium",
+        "Performance Testing",
+      ],
+      link: "https://herfa.com",
+      image: img6,
+    },
+    {
+      id: 7,
+      title: "MULTILIP – Where Investments Multiply with Confidence",
+      description:
+        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
+      tags: [
+        "Security Testing",
+        "API Testing",
+        "Automation Testing",
+        "Selenium",
+        "Performance Testing",
+      ],
+      link: "https://multilip.com",
+      image: img7,
+    },
+    {
+      id: 8,
+      title: "Highclass – Brand Expansion & Digital Retail Integration Project",
+      description:
+        "HIGHCLASS, known for premium footwear, is expanding into clothing and cosmetics to create a unified lifestyle brand with a seamless and luxurious shopping experience.",
+      tags: [
+        "UI Testing",
+        "Functional Testing",
+        "Automation Testing",
+        "Selenium",
+        "E-commerce Testing",
+      ],
+      link: "https://highclass.com",
+      image: img8,
+    },
+    {
+      id: 9,
+      title: "Note 2.0 – Contemporary Jewellery for the Bold",
+      description:
+        "Note 2.0 is a modern jewellery brand blending elegance with bold design, offering unique pieces for work, events, and everyday wear.",
+      tags: [
+        "UI Testing",
+        "Visual Testing",
+        "Functional Testing",
+        "Selenium",
+        "E-commerce Testing",
+      ],
+      link: "https://note2.com", // Replace with actual link if different
+      image: img9,
     },
   ];
 

@@ -16,8 +16,8 @@ const Home = () => {
       <SkillsSection />
       <Experience />
       <Project2Section />
-      <BugHunterGame />
       <Workflow />
+      <BugHunterGame />
       <ContactSection />
     </main>
   );

@@ -5,8 +5,9 @@ import { ProjectCard } from "./ProjectCard";
 import img from "../../app/media/image0.png";
 import img2 from "../../app/media/image1.png";
 import img3 from "../../app/media/image2.png";
-import img4 from "../../app/media/image3.png";
 import img5 from "../../app/media/image4.png";
+import img6 from "../../app/media/image5.png";
+import img7 from "../../app/media/image6.png";
 
 const Project2Section = () => {
   const projects = [
@@ -73,25 +74,40 @@ const Project2Section = () => {
     },
     {
       id: 5,
-      title: "BuyHouseEZ – Non-Conventional Home Financing",
+      title: "HERFA – Build Smarter, Build Faster with Digital Construction",
       description:
-        "BuyHouseEZ enables self-employed individuals and ITIN holders with poor credit to secure mortgages through alternative lending solutions.",
+        "HERFA is an online construction platform for contractors, builders, and project managers, offering real-time project tracking, material management, collaboration tools, and automated estimates to boost efficiency and cut costs.",
       tags: [
         "API Testing",
+        "UI Testing",
+        "Integration Testing",
+        "Selenium",
+        "Performance Testing",
+      ],
+      link: "https://herfa.com",
+      image: img6,
+    },
+    {
+      id: 6,
+      title: "MULTILIP – Where Investments Multiply with Confidence",
+      description:
+        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
+      tags: [
         "Security Testing",
+        "API Testing",
         "Automation Testing",
         "Selenium",
         "Performance Testing",
       ],
-      link: "https://buyhouseez.com/",
-      image: img4,
+      link: "https://multilip.com", // Replace with actual link if different
+      image: img7,
     },
   ];
 
   return (
     <section
       id="projects"
-      className="relative py-20 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
+      className="relative py-17 pb-10 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">

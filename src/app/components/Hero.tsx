@@ -1,17 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-  Download,
-  Mail,
-  Phone,
-  MapPin,
-  Calendar,
-  Star,
-  Award,
-  Users,
-  Trophy,
-} from "lucide-react";
+import { Download, Mail, Phone, MapPin, Calendar } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -285,7 +275,7 @@ const Hero = () => {
           </div>
 
           {/* Right Card */}
-          <div className="order-2 lg:pl-8 mt-6 sm:mt-8 lg:mt-0">
+          <div className="order-2 lg:pl-8 mt-6 sm:mt-8 md:mt-8">
             <Card className="bg-white/80 backdrop-blur-xl border border-slate-200/50 shadow-xl sm:shadow-2xl shadow-slate-200/50 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-slate-300/30 transition-shadow duration-300">
               <div className="p-4 sm:p-6 md:p-8">
                 <div className="text-center mb-4 sm:mb-6 md:mb-8">
