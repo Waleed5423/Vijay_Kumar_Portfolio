@@ -26,7 +26,7 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="h-full">
-      <Card className="h-full bg-white/90 backdrop-blur-sm border border-gray-400 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl group overflow-hidden flex flex-col">
+      <Card className="h-full bg-white/90 backdrop-blur-sm  shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl group overflow-hidden flex flex-col">
         <div className="relative h-48 overflow-hidden">
           <Image
             src={project.image}
