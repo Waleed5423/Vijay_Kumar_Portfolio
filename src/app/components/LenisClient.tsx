@@ -1,10 +1,10 @@
+// components/LenisClient.tsx
 "use client";
 
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
-import { ReactNode } from "react";
 
-export default function LenisWrapper({ children }: { children: ReactNode }) {
+export default function LenisClient() {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -29,5 +29,5 @@ export default function LenisWrapper({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  return <>{children}</>;
+  return null;
 }
