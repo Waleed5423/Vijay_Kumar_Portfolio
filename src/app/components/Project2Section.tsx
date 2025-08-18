@@ -10,71 +10,28 @@ import img6 from "../../app/media/image5.png";
 import img7 from "../../app/media/image6.png";
 import img9 from "../../app/media/image9.png";
 import img10 from "../../app/media/image10.png";
+import img11 from "../../app/media/image11.jpg";
+import img12 from "../../app/media/image12.png";
 
 const Project2Section = () => {
   const projects = [
-    {
-      id: 5,
-      title: "HERFA – Build Smarter, Build Faster with Digital Construction",
-      description:
-        "HERFA is an online construction platform for contractors, builders, and project managers, offering real-time project tracking, material management, collaboration tools, and automated estimates to boost efficiency and cut costs.",
-      tags: [
-        "API Testing",
-        "UI Testing",
-        "Integration Testing",
-        "Selenium",
-        "Performance Testing",
-      ],
-      link: "https://herfa.com",
-      image: img6,
-    },
-    {
-      id: 2,
-      title: "Argaam Charts – Financial Market Charts (Arabic)",
-      description:
-        "Argaam Charts (Arabic) provides interactive real-time financial charts and market analytics for Gulf and Saudi stocks.",
-      tags: [
-        "Test Automation",
-        "Web Testing",
-        "Performance Testing",
-        "Selenium",
-        "Flask",
-      ],
-      link: "https://www.argaamcharts.com/ar/1120",
-      image: img10,
-    },
-    {
-      id: 6,
-      title: "MULTILIP – Where Investments Multiply with Confidence",
-      description:
-        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
-      tags: [
-        "Security Testing",
-        "API Testing",
-        "Automation Testing",
-        "Selenium",
-        "Performance Testing",
-      ],
-      link: "https://multilip.com", // Replace with actual link if different
-      image: img7,
-    },
     {
       id: 1,
       title: "Argaam – Saudi Financial Markets & News",
       description:
         "Argaam (English) is a premier Saudi-based financial news portal offering real-time market data, analysis, interviews, and coverage of stocks across the Gulf region.",
       tags: [
-        "Test Automation",
         "Web Testing",
-        "Selenium",
-        "Flask",
+        "API Testing",
+        "Mobile App Testing",
+        "Admin Panel",
         "Performance Testing",
       ],
       link: "https://www.argaam.com/en",
-      image: img9,
+      image: img11,
     },
     {
-      id: 3,
+      id: 2,
       title: "Contractor Foreman – Construction Management Software",
       description:
         "Contractor Foreman is an all-in-one, cloud-based construction management suite offering project, financial, document, and team tracking tools.",
@@ -89,19 +46,55 @@ const Project2Section = () => {
       image: img3,
     },
     {
+      id: 3,
+      title: "MULTILIP – Where Investments Multiply with Confidence",
+      description:
+        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
+      tags: ["Mobile App Testing", "Admin Panel Testing", "API Testing"],
+      link: "https://multilip.com",
+      image: img7,
+    },
+    {
       id: 4,
+      title: "MACRO – Saudi Economic Data & Statistics",
+      description:
+        "Argaam Macro provides comprehensive economic data and statistics on the Saudi economy through simplified charts that cover all sectors, fields, and available historical periods, with some items extending over more than 50 years. The platform also offers necessary comparisons, growth indicators, and explanatory notes.\n\nThe Macro platform incorporates in detail all aspects related to the macroeconomics, such as inflation, labor forces, unemployment, GDP, the budget, the trade balance, as well as population, and real estate, electricity, industry, water sector indicators, among other data on the Saudi economy.",
+      tags: [
+        "Data Testing",
+        "Visualization Testing",
+        "Web Testing",
+        "API Testing",
+        "Performance Testing",
+      ],
+      link: "https://www.argaam.com/en/macro",
+      image: img10,
+    },
+    {
+      id: 5,
       title: "JOYA! – Social Loyalty & Gifting Platform",
       description:
         "JOYA! is a social loyalty platform enabling users to earn and redeem points, share experiences, and send gifts via social networking for partner stores.",
       tags: [
-        "Test Automation",
-        "UI Testing",
-        "Functional Testing",
-        "Selenium",
-        "CRM Testing",
+        "Mobile App Testing",
+        "Store Panel Testing",
+        "Admin Panel Testing",
       ],
       link: "https://oyah.com/index.html",
       image: img5,
+    },
+    {
+      id: 6,
+      title: "MAGUSAI – Your AI-Powered Trading Partner",
+      description:
+        "MAGUSAI is an advanced AI-driven trading platform designed to empower traders with intelligent insights and predictive analytics. By leveraging cutting-edge machine learning algorithms, MAGUSAI provides real-time performance tracking and strategic trade alerts, simplifying decision-making in the dynamic world of cryptocurrency trading.\n\nServices: Trading Performance Tracking\nClient: Magus AI\nLocation: United Arab Emirates\n\nProject Requirement\nThe development and implementation of MAGUSAI focused on:\n\n- AI-Driven Market Analysis: Utilizing over six years of machine learning to analyze market trends and provide accurate predictions.\n- Real-Time Performance Tracking: Offering users up-to-date insights into their trading activities and portfolio performance.\n- User-Friendly Interface: Designing an intuitive platform accessible via mobile and desktop, ensuring ease of use for traders at all levels.\n- Integration with Trading Platforms: Providing compatibility with popular trading platforms like MetaTrader 4 and 5 for seamless operation.\n\nSolution & Result\nThe deployment of MAGUSAI resulted in:\n\n- Enhanced Trading Confidence: Traders gained access to reliable AI-generated signals, aiding in making informed decisions.\n- Improved Efficiency: Automated insights and alerts reduced the time spent on market analysis, allowing traders to act swiftly.\n- Positive User Feedback: Users reported increased satisfaction due to the platform's accuracy and ease of use.\n- Industry Recognition: MAGUSAI received accolades for its innovative approach to AI-driven trading solutions.",
+      tags: [
+        "AI Testing",
+        "UI Testing",
+        "Integration Testing",
+        "Performance Testing",
+      ],
+      link: "https://magusai.com",
+      image: img12,
     },
   ];
 

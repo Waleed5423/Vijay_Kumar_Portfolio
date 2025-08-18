@@ -10,6 +10,12 @@ import { ArrowRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+import {
+  TooltipProvider,
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from "@/components/ui/tooltip";
 
 interface ProjectCardProps {
   project: {
@@ -17,16 +23,15 @@ interface ProjectCardProps {
     title: string;
     description: string;
     tags: string[];
-    link: string;
     image: StaticImageData;
-    github?: string; // Added optional github link
+    github?: string;
   };
 }
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <div className="h-full">
-      <Card className="h-full bg-white/90 backdrop-blur-sm  shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl group overflow-hidden flex flex-col">
+      <Card className="h-full bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl group overflow-hidden flex flex-col">
         <div className="relative h-48 overflow-hidden">
           <Image
             src={project.image}
@@ -69,35 +74,29 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             <Button
               variant="outline"
               className="w-full gap-2 hover:bg-gray-100 border-gray-300 text-gray-700 transition-all"
-              asChild={!!project.github}
               disabled={!project.github}
             >
-              {project.github ? (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github className="h-4 w-4" />
-                  <span>Code</span>
-                </a>
-              ) : (
-                <>
-                  <Github className="h-4 w-4" />
-                  <span>Private</span>
-                </>
-              )}
+              <Github className="h-4 w-4" />
+              <span>{project.github ? "Code" : "Private"}</span>
             </Button>
-            <Button
-              variant="default"
-              className="w-full gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md hover:shadow-lg transition-all"
-              asChild
-            >
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <span>Live Demo</span>
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Button
+                    variant="default"
+                    className="w-full gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md hover:shadow-lg transition-all"
+                    disabled
+                  >
+                    <span>Live Demo</span>
+                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>No live demo available / Private</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
         </CardContent>
       </Card>

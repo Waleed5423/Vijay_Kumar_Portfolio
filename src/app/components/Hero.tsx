@@ -229,17 +229,17 @@ const Hero = () => {
 
               {/* Floating Badges Around Image */}
               <div className="absolute top-10 left-0 z-20">
-                <Badge className="bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 text-xs font-medium animate-float3">
+                <Badge className="bg-blue-50 text-blue-500 hover:text-white border border-blue-200 px-3 py-1 text-xs font-medium animate-float3">
                   Agile Testing
                 </Badge>
               </div>
               <div className="absolute bottom-10 right-0 z-20">
-                <Badge className="bg-indigo-50 text-indigo-700 border border-indigo-200 px-3 py-1 text-xs font-medium animate-float2">
-                  QA Expert
+                <Badge className="bg-indigo-50 text-indigo-500 hover:text-white border border-indigo-200 px-3 py-1 text-xs font-medium animate-float2">
+                  SQA Expert
                 </Badge>
               </div>
               <div className="absolute top-1/2 -left-4 z-20">
-                <Badge className="bg-purple-50 text-purple-700 border border-purple-200 px-3 py-1 text-xs font-medium animate-float1">
+                <Badge className="bg-purple-50 text-purple-500 hover:text-white border border-purple-200 px-3 py-1 text-xs font-medium animate-float1">
                   7+ Years Exp
                 </Badge>
               </div>

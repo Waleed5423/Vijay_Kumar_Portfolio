@@ -10,112 +10,143 @@ import { ArrowRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import img from "../../media/image0.png";
-import img2 from "../../media/image1.png";
-import img3 from "../../media/image2.png";
-import img4 from "../../media/image3.png";
-import img5 from "../../media/image4.png";
-import img6 from "../../media/image5.png";
-import img7 from "../../media/image6.png";
-import img8 from "../../media/image7.png";
-import img9 from "../../media/image8.png";
-import img10 from "../../media/image9.png";
-import img11 from "../../media/image10.png";
+import img1 from "../../media/image1.png";
+import img2 from "../../media/image2.png";
+import img3 from "../../media/image3.png";
+import img4 from "../../media/image4.png";
+import img5 from "../../media/image5.png";
+import img6 from "../../media/image6.png";
+import img7 from "../../media/image7.png";
+import img9 from "../../media/image9.png";
+import img8 from "../../media/image8.png";
+import img10 from "../../media/image10.png";
+import img11 from "../../media/image11.jpg";
+import img12 from "../../media/image12.png";
+import {
+  TooltipProvider,
+  Tooltip,
+  TooltipTrigger,
+  TooltipContent,
+} from "@/components/ui/tooltip";
 
 const ProjectsPage = () => {
   const projects = [
-    {
-      id: 7,
-      title: "MULTILIP – Where Investments Multiply with Confidence",
-      description:
-        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
-      tags: [
-        "Security Testing",
-        "API Testing",
-        "Automation Testing",
-        "Selenium",
-        "Performance Testing",
-      ],
-      link: "https://multilip.com",
-      image: img7,
-    },
-    {
-      id: 3,
-      title: "Contractor Foreman – Construction Management Software",
-      description:
-        "Contractor Foreman is an all-in-one, cloud-based construction management suite offering project, financial, document, and team tracking tools.",
-      tags: [
-        "API Testing",
-        "Integration Testing",
-        "Load Testing",
-        "Selenium",
-        "Performance Testing",
-      ],
-      link: "https://contractorforeman.com/",
-      image: img3,
-    },
     {
       id: 1,
       title: "Argaam – Saudi Financial Markets & News",
       description:
         "Argaam (English) is a premier Saudi-based financial news portal offering real-time market data, analysis, interviews, and coverage of stocks across the Gulf region.",
       tags: [
-        "Test Automation",
         "Web Testing",
-        "Selenium",
-        "Flask",
+        "API Testing",
+        "Mobile App Testing",
+        "Admin Panel",
         "Performance Testing",
       ],
       link: "https://www.argaam.com/en",
       image: img11,
     },
     {
-      id: 4,
+      id: 2,
+      title: "MACRO – Saudi Economic Data & Statistics",
+      description:
+        "Argaam Macro provides comprehensive economic data and statistics on the Saudi economy through simplified charts that cover all sectors, fields, and available historical periods, with some items extending over more than 50 years. The platform also offers necessary comparisons, growth indicators, and explanatory notes.\n\nThe Macro platform incorporates in detail all aspects related to the macroeconomics, such as inflation, labor forces, unemployment, GDP, the budget, the trade balance, as well as population, and real estate, electricity, industry, water sector indicators, among other data on the Saudi economy.",
+      tags: [
+        "Data Testing",
+        "Visualization Testing",
+        "Web Testing",
+        "API Testing",
+        "Performance Testing",
+      ],
+      link: "https://argaam.com/en/macro",
+      image: img10,
+    },
+    {
+      id: 3,
       title: "JOYA! – Social Loyalty & Gifting Platform",
       description:
         "JOYA! is a social loyalty platform enabling users to earn and redeem points, share experiences, and send gifts via social networking for partner stores.",
       tags: [
-        "Test Automation",
-        "UI Testing",
-        "Functional Testing",
-        "Selenium",
-        "CRM Testing",
+        "Mobile App Testing",
+        "Store Panel Testing",
+        "Admin Panel Testing",
       ],
       link: "https://oyah.com/index.html",
-      image: img5,
+      image: img4,
+    },
+
+    {
+      id: 4,
+      title: "MULTILIP – Where Investments Multiply with Confidence",
+      description:
+        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
+      tags: ["Mobile App Testing", "Admin Panel Testing", "API Testing"],
+      link: "https://multilip.com",
+      image: img6,
     },
     {
       id: 5,
+      title: "Highclass – Brand Expansion & Digital Retail Integration Project",
+      description:
+        "HIGHCLASS, known for premium footwear, is expanding into clothing and cosmetics to create a unified lifestyle brand with a seamless and luxurious shopping experience.",
+      tags: ["Mobile App Testing", "Admin Panel Testing", "API Testing"],
+      link: "https://highclass.com",
+      image: img7,
+    },
+
+    {
+      id: 6,
       title: "BuyHouseEZ – Non-Conventional Home Financing",
       description:
         "BuyHouseEZ enables self-employed individuals and ITIN holders with poor credit to secure mortgages through alternative lending solutions.",
-      tags: [
-        "API Testing",
-        "Security Testing",
-        "Automation Testing",
-        "Selenium",
-        "Performance Testing",
-      ],
+      tags: ["API Testing", "Automation Testing", "Performance Testing"],
       link: "https://buyhouseez.com/",
-      image: img4,
+      image: img3,
     },
     {
-      id: 6,
+      id: 7,
+      title: "ARGAAM100 – Stock Performance Tracker",
+      description:
+        "With Argaam 100, you can track the performance of listed stocks over various timeframes — daily, monthly, yearly, five years - and since IPO. Compare the performance of your stocks with market competitors and identify your best investment opportunities!",
+      tags: [
+        "Web Testing",
+        "Data Testing",
+        "UI Testing",
+        "Performance Testing",
+      ],
+      link: "https://argaam.com/en/argaam100",
+      image: img9,
+    },
+    {
+      id: 8,
       title: "HERFA – Build Smarter, Build Faster with Digital Construction",
       description:
         "HERFA is an online construction platform for contractors, builders, and project managers, offering real-time project tracking, material management, collaboration tools, and automated estimates to boost efficiency and cut costs.",
       tags: [
+        "Mobile App Testing",
+        "Admin Panel Testing",
         "API Testing",
-        "UI Testing",
-        "Integration Testing",
-        "Selenium",
-        "Performance Testing",
+        "Notification Testing",
       ],
       link: "https://herfa.com",
-      image: img6,
+      image: img5,
     },
     {
-      id: 2,
+      id: 9,
+      title: "Note 2.0 – Contemporary Jewellery for the Bold",
+      description:
+        "Note 2.0 is a modern jewellery brand blending elegance with bold design, offering unique pieces for work, events, and everyday wear.",
+      tags: [
+        "Mobile App Testing",
+        "Admin Panel Testing",
+        "API Testing",
+        "Notification Testing",
+      ],
+      link: "https://note2.com",
+      image: img8,
+    },
+    {
+      id: 10,
       title: "Argaam Charts – Financial Market Charts (Arabic)",
       description:
         "Argaam Charts (Arabic) provides interactive real-time financial charts and market analytics for Gulf and Saudi stocks.",
@@ -127,38 +158,36 @@ const ProjectsPage = () => {
         "Flask",
       ],
       link: "https://www.argaamcharts.com/ar/1120",
-      image: img10,
-    },
-
-    {
-      id: 8,
-      title: "Highclass – Brand Expansion & Digital Retail Integration Project",
-      description:
-        "HIGHCLASS, known for premium footwear, is expanding into clothing and cosmetics to create a unified lifestyle brand with a seamless and luxurious shopping experience.",
-      tags: [
-        "UI Testing",
-        "Functional Testing",
-        "Automation Testing",
-        "Selenium",
-        "E-commerce Testing",
-      ],
-      link: "https://highclass.com",
-      image: img8,
+      image: img1,
     },
     {
-      id: 9,
-      title: "Note 2.0 – Contemporary Jewellery for the Bold",
+      id: 11,
+      title: "Contractor Foreman – Construction Management Software",
       description:
-        "Note 2.0 is a modern jewellery brand blending elegance with bold design, offering unique pieces for work, events, and everyday wear.",
+        "Contractor Foreman is an all-in-one, cloud-based construction management suite offering project, financial, document, and team tracking tools.",
       tags: [
-        "UI Testing",
-        "Visual Testing",
-        "Functional Testing",
+        "API Testing",
+        "Integration Testing",
+        "Load Testing",
         "Selenium",
-        "E-commerce Testing",
+        "Performance Testing",
       ],
-      link: "https://note2.com", // Replace with actual link if different
-      image: img9,
+      link: "https://contractorforeman.com/",
+      image: img2,
+    },
+    {
+      id: 12,
+      title: "MAGUSAI – Your AI-Powered Trading Partner",
+      description:
+        "MAGUSAI is an advanced AI-driven trading platform designed to empower traders with intelligent insights and predictive analytics. By leveraging cutting-edge machine learning algorithms, MAGUSAI provides real-time performance tracking and strategic trade alerts, simplifying decision-making in the dynamic world of cryptocurrency trading.\n\nServices: Trading Performance Tracking\nClient: Magus AI\nLocation: United Arab Emirates\n\nProject Requirement\nThe development and implementation of MAGUSAI focused on:\n\n- AI-Driven Market Analysis: Utilizing over six years of machine learning to analyze market trends and provide accurate predictions.\n- Real-Time Performance Tracking: Offering users up-to-date insights into their trading activities and portfolio performance.\n- User-Friendly Interface: Designing an intuitive platform accessible via mobile and desktop, ensuring ease of use for traders at all levels.\n- Integration with Trading Platforms: Providing compatibility with popular trading platforms like MetaTrader 4 and 5 for seamless operation.\n\nSolution & Result\nThe deployment of MAGUSAI resulted in:\n\n- Enhanced Trading Confidence: Traders gained access to reliable AI-generated signals, aiding in making informed decisions.\n- Improved Efficiency: Automated insights and alerts reduced the time spent on market analysis, allowing traders to act swiftly.\n- Positive User Feedback: Users reported increased satisfaction due to the platform's accuracy and ease of use.\n- Industry Recognition: MAGUSAI received accolades for its innovative approach to AI-driven trading solutions.",
+      tags: [
+        "AI Testing",
+        "UI Testing",
+        "Integration Testing",
+        "Performance Testing",
+      ],
+      link: "https://magusai.com",
+      image: img12,
     },
   ];
 
@@ -242,6 +271,7 @@ const ProjectsPage = () => {
               className="transition-all duration-300 hover:z-10 hover:scale-[1.02]"
             >
               <Card className="h-full bg-white/90 backdrop-blur-sm border border-slate-200 shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-xl group overflow-hidden flex flex-col">
+                {" "}
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={project.image}
@@ -253,7 +283,6 @@ const ProjectsPage = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                 </div>
-
                 <CardHeader className="pb-3">
                   <CardTitle className="text-xl font-semibold text-slate-800">
                     {project.title}
@@ -262,7 +291,6 @@ const ProjectsPage = () => {
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-
                 <CardContent className="mt-auto">
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
@@ -284,20 +312,24 @@ const ProjectsPage = () => {
                       <Github className="h-4 w-4" />
                       <span>Private</span>
                     </Button>
-                    <Button
-                      variant="default"
-                      className="w-full gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md hover:shadow-lg transition-all"
-                      asChild
-                    >
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span>Live Demo</span>
-                        <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </a>
-                    </Button>
+
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button
+                            variant="default"
+                            className="w-full gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-md hover:shadow-lg transition-all"
+                            disabled
+                          >
+                            <span>Live Demo</span>
+                            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>No live demo available / Private</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   </div>
                 </CardContent>
               </Card>
