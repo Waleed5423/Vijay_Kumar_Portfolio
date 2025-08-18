@@ -56,6 +56,20 @@ const Project2Section = () => {
     },
     {
       id: 4,
+      title: "MAGUSAI – Your AI-Powered Trading Partner",
+      description:
+        "MAGUSAI is an advanced AI-driven trading platform designed to empower traders with intelligent insights and predictive analytics. By leveraging cutting-edge machine learning algorithms, MAGUSAI provides real-time performance tracking and strategic trade alerts, simplifying decision-making in the dynamic world of cryptocurrency trading.\n\nServices: Trading Performance Tracking\nClient: Magus AI\nLocation: United Arab Emirates\n\nProject Requirement\nThe development and implementation of MAGUSAI focused on:\n\n- AI-Driven Market Analysis: Utilizing over six years of machine learning to analyze market trends and provide accurate predictions.\n- Real-Time Performance Tracking: Offering users up-to-date insights into their trading activities and portfolio performance.\n- User-Friendly Interface: Designing an intuitive platform accessible via mobile and desktop, ensuring ease of use for traders at all levels.\n- Integration with Trading Platforms: Providing compatibility with popular trading platforms like MetaTrader 4 and 5 for seamless operation.\n\nSolution & Result\nThe deployment of MAGUSAI resulted in:\n\n- Enhanced Trading Confidence: Traders gained access to reliable AI-generated signals, aiding in making informed decisions.\n- Improved Efficiency: Automated insights and alerts reduced the time spent on market analysis, allowing traders to act swiftly.\n- Positive User Feedback: Users reported increased satisfaction due to the platform's accuracy and ease of use.\n- Industry Recognition: MAGUSAI received accolades for its innovative approach to AI-driven trading solutions.",
+      tags: [
+        "AI Testing",
+        "UI Testing",
+        "Integration Testing",
+        "Performance Testing",
+      ],
+      link: "https://magusai.com",
+      image: img12,
+    },
+    {
+      id: 5,
       title: "MACRO – Saudi Economic Data & Statistics",
       description:
         "Argaam Macro provides comprehensive economic data and statistics on the Saudi economy through simplified charts that cover all sectors, fields, and available historical periods, with some items extending over more than 50 years. The platform also offers necessary comparisons, growth indicators, and explanatory notes.\n\nThe Macro platform incorporates in detail all aspects related to the macroeconomics, such as inflation, labor forces, unemployment, GDP, the budget, the trade balance, as well as population, and real estate, electricity, industry, water sector indicators, among other data on the Saudi economy.",
@@ -70,7 +84,7 @@ const Project2Section = () => {
       image: img10,
     },
     {
-      id: 5,
+      id: 6,
       title: "JOYA! – Social Loyalty & Gifting Platform",
       description:
         "JOYA! is a social loyalty platform enabling users to earn and redeem points, share experiences, and send gifts via social networking for partner stores.",
@@ -82,20 +96,7 @@ const Project2Section = () => {
       link: "https://oyah.com/index.html",
       image: img5,
     },
-    {
-      id: 6,
-      title: "MAGUSAI – Your AI-Powered Trading Partner",
-      description:
-        "MAGUSAI is an advanced AI-driven trading platform designed to empower traders with intelligent insights and predictive analytics. By leveraging cutting-edge machine learning algorithms, MAGUSAI provides real-time performance tracking and strategic trade alerts, simplifying decision-making in the dynamic world of cryptocurrency trading.\n\nServices: Trading Performance Tracking\nClient: Magus AI\nLocation: United Arab Emirates\n\nProject Requirement\nThe development and implementation of MAGUSAI focused on:\n\n- AI-Driven Market Analysis: Utilizing over six years of machine learning to analyze market trends and provide accurate predictions.\n- Real-Time Performance Tracking: Offering users up-to-date insights into their trading activities and portfolio performance.\n- User-Friendly Interface: Designing an intuitive platform accessible via mobile and desktop, ensuring ease of use for traders at all levels.\n- Integration with Trading Platforms: Providing compatibility with popular trading platforms like MetaTrader 4 and 5 for seamless operation.\n\nSolution & Result\nThe deployment of MAGUSAI resulted in:\n\n- Enhanced Trading Confidence: Traders gained access to reliable AI-generated signals, aiding in making informed decisions.\n- Improved Efficiency: Automated insights and alerts reduced the time spent on market analysis, allowing traders to act swiftly.\n- Positive User Feedback: Users reported increased satisfaction due to the platform's accuracy and ease of use.\n- Industry Recognition: MAGUSAI received accolades for its innovative approach to AI-driven trading solutions.",
-      tags: [
-        "AI Testing",
-        "UI Testing",
-        "Integration Testing",
-        "Performance Testing",
-      ],
-      link: "https://magusai.com",
-      image: img12,
-    },
+   
   ];
 
   return (
