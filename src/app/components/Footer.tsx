@@ -20,8 +20,8 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="https://github.com/VijayDvaswani">
-                <Button size="icon" variant="default" className="bg-gray-800">
-                  <Github className="h-4 w-4 " />
+                <Button size="icon" variant="default" className="bg-gray-200 ">
+                  <Github className="h-4 w-4 text-gray-800 hover:text-gray-100" />
                 </Button>
               </a>
               <a href="https://www.linkedin.com/in/vijaykumarvaswani/">

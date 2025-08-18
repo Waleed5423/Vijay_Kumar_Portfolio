@@ -73,7 +73,6 @@ const Project2Section = () => {
       link: "https://www.argaam.com/en",
       image: img9,
     },
-
     {
       id: 3,
       title: "Contractor Foreman – Construction Management Software",
