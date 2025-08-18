@@ -8,34 +8,25 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="md:min-h-screen py-20 flex items-center justify-center overflow-hidden relative bg-gradient-to-br from-slate-100 via-blue-50/50 to-red-200/50 md:py-0"
+      className="md:min-h-screen py-12 md:py-20 flex items-center justify-center overflow-hidden relative bg-gradient-to-br from-slate-100 via-blue-50/50 to-red-200/50"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Floating Balls with Animation */}
-        <div className="absolute top-1/4 left-3/5 w-6 h-6 bg-blue-400/20 rounded-full animate-float1"></div>
-        <div className="absolute top-1/3 right-2/4 w-8 h-8 bg-indigo-400/20 rounded-full animate-float2"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-5 h-5 bg-purple-400/20 rounded-full animate-float3"></div>
-        <div className="absolute top-2/5 right-2/5 w-7 h-7 bg-blue-400/15 rounded-full animate-float4"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-6 h-6 bg-indigo-400/15 rounded-full animate-float5"></div>
-        <div className="absolute top-3/4 right-1/3 w-5 h-5 bg-purple-400/15 rounded-full animate-float6"></div>
-        <div className="absolute top-10 left-2/2 w-4 h-4 bg-pink-400/20 rounded-full animate-float7"></div>
-        <div className="absolute bottom-1/2 right-3/6 w-9 h-9 bg-teal-400/20 rounded-full animate-float8"></div>
-        <div className="absolute top-1/6 right-2/3 w-5 h-5 bg-yellow-400/15 rounded-full animate-float9"></div>
-        <div className="absolute bottom-3/5 left-1/5 w-6 h-6 bg-rose-400/15 rounded-full animate-float10"></div>
-        <div className="absolute top-3/5 left-1/6 w-7 h-7 bg-emerald-400/15 rounded-full animate-float11"></div>
-        <div className="absolute bottom-1/10 right-1/2 w-8 h-8 bg-cyan-400/15 rounded-full animate-float12"></div>
+        {/* Floating Balls with Animation - Reduced number for mobile */}
+        <div className="hidden sm:block absolute top-1/4 left-3/5 w-6 h-6 bg-blue-400/20 rounded-full animate-float1"></div>
+        <div className="hidden sm:block absolute top-1/3 right-2/4 w-8 h-8 bg-indigo-400/20 rounded-full animate-float2"></div>
+        <div className="hidden sm:block absolute bottom-1/4 left-1/3 w-5 h-5 bg-purple-400/20 rounded-full animate-float3"></div>
+        <div className="hidden sm:block absolute top-2/5 right-2/5 w-7 h-7 bg-blue-400/15 rounded-full animate-float4"></div>
+        <div className="hidden sm:block absolute bottom-1/3 left-1/4 w-6 h-6 bg-indigo-400/15 rounded-full animate-float5"></div>
+        <div className="hidden sm:block absolute top-3/4 right-1/3 w-5 h-5 bg-purple-400/15 rounded-full animate-float6"></div>
 
-        {/* Geometric Shapes */}
-        <div className="absolute top-1/5 left-1/5 w-40 h-40 bg-blue-400/10 rounded-lg rotate-45 animate-rotate-slow"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-32 h-32 bg-indigo-400/10 rounded-full animate-pulse-slow"></div>
-        <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-purple-400/10 triangle animate-float-slow"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-28 h-28 bg-pink-400/10 rounded-lg rotate-12 animate-rotate-reverse-slow"></div>
+        {/* Geometric Shapes - Hidden on mobile */}
+        <div className="hidden sm:block absolute top-1/5 left-1/5 w-40 h-40 bg-blue-400/10 rounded-lg rotate-45 animate-rotate-slow"></div>
+        <div className="hidden sm:block absolute bottom-1/4 right-1/4 w-32 h-32 bg-indigo-400/10 rounded-full animate-pulse-slow"></div>
 
-        {/* Blurred Background Elements */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-400/10 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-purple-400/10 rounded-full blur-2xl animate-pulse-slow delay-500"></div>
+        {/* Blurred Background Elements - Reduced for mobile */}
+        <div className="absolute top-20 left-10 w-48 h-48 sm:w-72 sm:h-72 bg-blue-400/10 rounded-full blur-xl sm:blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-20 right-10 w-64 h-64 sm:w-96 sm:h-96 bg-indigo-400/10 rounded-full blur-xl sm:blur-3xl animate-pulse-slow delay-1000"></div>
       </div>
 
       <style>{`
@@ -128,10 +119,10 @@ const Hero = () => {
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full">
-          {/* Left Content */}
-          <div className="space-y-4 lg:space-y-6 lg:pr-8 order-1 mt-0 lg:mt-0">
+      <div className="container sm:mt-20 md:mt-0 mx-auto px-4 sm:px-6 relative z-10 max-w-7xl">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Left Content - Order changed for mobile */}
+          <div className="space-y-4 lg:space-y-6 lg:pr-8 order-2 lg:order-1 mt-0 lg:mt-0">
             {/* Status Badge */}
             <div className="flex items-center gap-2 w-fit bg-emerald-50 border border-emerald-200/60 px-3 py-1 rounded-full hover:shadow-sm hover:shadow-emerald-100 transition-shadow">
               <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
@@ -157,8 +148,8 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Contact Info */}
-            <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-3">
+            {/* Contact Info - Adjusted for mobile */}
+            <div className="grid grid-cols-2 xs:grid-cols-2 gap-2 sm:gap-3">
               <div className="flex items-center gap-2 text-slate-700 bg-white/60 backdrop-blur-sm px-3 py-1.5 sm:py-2 rounded-lg border border-slate-200/50 text-xs sm:text-sm hover:shadow-sm hover:shadow-blue-100 transition-shadow">
                 <div className="flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 bg-blue-100 rounded-lg">
                   <Mail className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-blue-600" />
@@ -187,19 +178,19 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col-2 sm:flex-row gap-2 sm:gap-3 pt-2">
+            {/* CTA Buttons - Stacked on mobile */}
+            <div className="flex flex-row sm:flex-row gap-2 sm:gap-3 pt-2">
               <Button
                 size="lg"
                 variant="gradient"
-                className="shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 font-semibold px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm rounded-xl w-full sm:w-auto transition-all duration-300"
+                className="shadow-lg shadow-blue-200 hover:shadow-xl hover:shadow-blue-300 font-semibold px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm rounded-xl w-full transition-all duration-300"
               >
                 <Download className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Download Resume
               </Button>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center font-semibold px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm rounded-xl w-full sm:w-auto bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:from-blue-600 hover:to-indigo-700 hover:shadow-lg hover:shadow-indigo-200 transition-all duration-300"
+                className="inline-flex items-center justify-center font-semibold px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm rounded-xl w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white hover:from-blue-600 hover:to-indigo-700 hover:shadow-lg hover:shadow-indigo-200 transition-all duration-300"
               >
                 <Mail className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Hire Me
@@ -207,39 +198,39 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Side - Image */}
-          <div className="relative order-2 flex items-center justify-center ">
-            <div className="relative w-full max-w-md aspect-square">
-              {/* Image Container with Decorative Elements */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-100/30 via-indigo-100/30 to-purple-100/30 blur-xl animate-pulse-slow"></div>
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-400/10 rounded-full animate-float-slow"></div>
-              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-purple-400/10 rounded-lg rotate-45 animate-rotate-slow"></div>
+          {/* Right Side - Image - Smaller on mobile */}
+          <div className="relative order-1 lg:order-2 flex items-center justify-center w-full">
+            <div className="relative w-full max-w-xs sm:max-w-md aspect-square mx-auto">
+              {/* Image Container with Decorative Elements - Reduced for mobile */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-100/30 via-indigo-100/30 to-purple-100/30 blur-lg sm:blur-xl animate-pulse-slow"></div>
+              <div className="hidden sm:block absolute -top-6 -right-6 w-32 h-32 bg-blue-400/10 rounded-full animate-float-slow"></div>
+              <div className="hidden sm:block absolute -bottom-6 -left-6 w-40 h-40 bg-purple-400/10 rounded-lg rotate-45 animate-rotate-slow"></div>
 
-              {/* Your Image */}
-              <div className="relative z-10 w-full h-full flex items-center justify-center lg:mt-10">
-                <div className="w-[28rem] h-[28rem] sm:w-[32rem] sm:h-[32rem] md:w-[30rem] md:h-[30rem] bg-white/50 backdrop-blur-sm rounded-full overflow-hidden border-8 border-white/50 shadow-2xl shadow-blue-200/50 hover:shadow-3xl hover:shadow-indigo-300/50 transition-all duration-500">
-                  {/* Replace with your actual image */}
+              {/* Your Image - Smaller on mobile */}
+              <div className="relative z-10 w-full h-full flex items-center justify-center">
+                <div className="w-64 h-64 sm:w-[28rem] sm:h-[28rem] md:w-[30rem] md:h-[30rem] bg-white/50 backdrop-blur-sm rounded-full overflow-hidden border-4 sm:border-8 border-white/50 shadow-lg sm:shadow-2xl shadow-blue-200/50 hover:shadow-xl sm:hover:shadow-3xl hover:shadow-indigo-300/50 transition-all duration-500">
                   <Image
                     src={img}
                     alt="Vijay Dvaswani"
                     className="w-full h-full object-cover"
+                    priority
                   />
                 </div>
               </div>
 
-              {/* Floating Badges Around Image */}
-              <div className="absolute top-10 left-0 z-20">
-                <Badge className="bg-blue-50 text-blue-500 hover:text-white border border-blue-200 px-3 py-1 text-xs font-medium animate-float3">
+              {/* Floating Badges Around Image - Adjusted for mobile */}
+              <div className="absolute top-4 sm:top-10 left-0 z-20">
+                <Badge className="bg-blue-50 text-blue-500 hover:text-white border border-blue-200 px-2 sm:px-3 py-1 text-xs font-medium animate-float3">
                   Agile Testing
                 </Badge>
               </div>
-              <div className="absolute bottom-10 right-0 z-20">
-                <Badge className="bg-indigo-50 text-indigo-500 hover:text-white border border-indigo-200 px-3 py-1 text-xs font-medium animate-float2">
+              <div className="absolute bottom-4 sm:bottom-10 right-0 z-20">
+                <Badge className="bg-indigo-50 text-indigo-500 hover:text-white border border-indigo-200 px-2 sm:px-3 py-1 text-xs font-medium animate-float2">
                   SQA Expert
                 </Badge>
               </div>
-              <div className="absolute top-1/2 -left-4 z-20">
-                <Badge className="bg-purple-50 text-purple-500 hover:text-white border border-purple-200 px-3 py-1 text-xs font-medium animate-float1">
+              <div className="absolute top-1/2 -left-2 sm:-left-4 z-20">
+                <Badge className="bg-purple-50 text-purple-500 hover:text-white border border-purple-200 px-2 sm:px-3 py-1 text-xs font-medium animate-float1">
                   7+ Years Exp
                 </Badge>
               </div>

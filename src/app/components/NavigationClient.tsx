@@ -81,7 +81,7 @@ export default function NavigationClient({
       }`}
     >
       <div className="md:container mx-auto md:px-6">
-        <div className="flex items-center justify-between h-16 relative z-50 px-6">
+        <div className="flex items-center justify-between h-16 relative z-50 px-2 sm:px-0">
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-2xl font-extrabold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">

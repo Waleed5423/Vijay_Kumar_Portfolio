@@ -2,13 +2,9 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ProjectCard } from "./ProjectCard";
-import img from "../../app/media/image0.png";
-import img2 from "../../app/media/image1.png";
 import img3 from "../../app/media/image2.png";
 import img5 from "../../app/media/image4.png";
-import img6 from "../../app/media/image5.png";
 import img7 from "../../app/media/image6.png";
-import img9 from "../../app/media/image9.png";
 import img10 from "../../app/media/image10.png";
 import img11 from "../../app/media/image11.jpg";
 import img12 from "../../app/media/image12.png";
@@ -96,7 +92,6 @@ const Project2Section = () => {
       link: "https://oyah.com/index.html",
       image: img5,
     },
-   
   ];
 
   return (
@@ -104,7 +99,6 @@ const Project2Section = () => {
       id="projects"
       className="relative py-17 pb-15 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
     >
-      {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating Balls */}
         <div className="absolute top-1/4 left-1/3 w-6 h-6 bg-blue-400/20 rounded-full animate-float1 shadow-sm"></div>
@@ -170,7 +164,8 @@ const Project2Section = () => {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
       `}</style>
-      <div className="mx-auto px-4 sm:px-6 relative z-10 max-w-9xl container">
+      
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-8xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4 animate-fadeIn">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">

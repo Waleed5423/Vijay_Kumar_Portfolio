@@ -150,13 +150,7 @@ const ProjectsPage = () => {
       title: "Argaam Charts – Financial Market Charts (Arabic)",
       description:
         "Argaam Charts (Arabic) provides interactive real-time financial charts and market analytics for Gulf and Saudi stocks.",
-      tags: [
-        "Test Automation",
-        "Web Testing",
-        "Performance Testing",
-        "Selenium",
-        "Flask",
-      ],
+      tags: ["Web Testing", "Performance Testing", "API Testing", "CMS"],
       link: "https://www.argaamcharts.com/ar/1120",
       image: img1,
     },
@@ -167,9 +161,9 @@ const ProjectsPage = () => {
         "Contractor Foreman is an all-in-one, cloud-based construction management suite offering project, financial, document, and team tracking tools.",
       tags: [
         "API Testing",
-        "Integration Testing",
+        "Web Testing",
         "Load Testing",
-        "Selenium",
+        "Mobile App Testing",
         "Performance Testing",
       ],
       link: "https://contractorforeman.com/",
@@ -183,8 +177,9 @@ const ProjectsPage = () => {
       tags: [
         "AI Testing",
         "UI Testing",
-        "Integration Testing",
+        "Web Testing",
         "Performance Testing",
+        "Mobile App Testing",
       ],
       link: "https://magusai.com",
       image: img12,
@@ -243,7 +238,7 @@ const ProjectsPage = () => {
         .animate-float12 { animation: float12 24s ease-in-out infinite; }
       `}</style>
 
-      <div className="mx-auto px-4 sm:px-6 relative z-10 max-w-9xl container">
+      <div className="mx-auto px-4 sm:px-6 relative z-10 max-w-8xl container">
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -254,7 +249,7 @@ const ProjectsPage = () => {
             Comprehensive collection of my quality assurance and test automation
             projects.
           </p>
-          <div className="mt-6">
+          <div className="mt-6 md:hidden">
             <Link href="/">
               <Button variant="outline" className="gap-2">
                 <ArrowRight className="h-4 w-4 rotate-180" />
