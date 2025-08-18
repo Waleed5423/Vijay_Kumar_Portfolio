@@ -19,38 +19,25 @@ import img6 from "../../media/image5.png";
 import img7 from "../../media/image6.png";
 import img8 from "../../media/image7.png";
 import img9 from "../../media/image8.png";
+import img10 from "../../media/image9.png";
+import img11 from "../../media/image10.png";
 
 const ProjectsPage = () => {
   const projects = [
     {
-      id: 1,
-      title: "Argaam – Saudi Financial Markets & News",
+      id: 7,
+      title: "MULTILIP – Where Investments Multiply with Confidence",
       description:
-        "Argaam (English) is a premier Saudi-based financial news portal offering real-time market data, analysis, interviews, and coverage of stocks across the Gulf region.",
+        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
       tags: [
-        "Test Automation",
-        "Web Testing",
+        "Security Testing",
+        "API Testing",
+        "Automation Testing",
         "Selenium",
-        "Flask",
         "Performance Testing",
       ],
-      link: "https://www.argaam.com/en",
-      image: img,
-    },
-    {
-      id: 2,
-      title: "Argaam Charts – Financial Market Charts (Arabic)",
-      description:
-        "Argaam Charts (Arabic) provides interactive real-time financial charts and market analytics for Gulf and Saudi stocks.",
-      tags: [
-        "Test Automation",
-        "Web Testing",
-        "Performance Testing",
-        "Selenium",
-        "Flask",
-      ],
-      link: "https://www.argaamcharts.com/ar/1120",
-      image: img2,
+      link: "https://multilip.com",
+      image: img7,
     },
     {
       id: 3,
@@ -66,6 +53,21 @@ const ProjectsPage = () => {
       ],
       link: "https://contractorforeman.com/",
       image: img3,
+    },
+    {
+      id: 1,
+      title: "Argaam – Saudi Financial Markets & News",
+      description:
+        "Argaam (English) is a premier Saudi-based financial news portal offering real-time market data, analysis, interviews, and coverage of stocks across the Gulf region.",
+      tags: [
+        "Test Automation",
+        "Web Testing",
+        "Selenium",
+        "Flask",
+        "Performance Testing",
+      ],
+      link: "https://www.argaam.com/en",
+      image: img11,
     },
     {
       id: 4,
@@ -113,20 +115,21 @@ const ProjectsPage = () => {
       image: img6,
     },
     {
-      id: 7,
-      title: "MULTILIP – Where Investments Multiply with Confidence",
+      id: 2,
+      title: "Argaam Charts – Financial Market Charts (Arabic)",
       description:
-        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
+        "Argaam Charts (Arabic) provides interactive real-time financial charts and market analytics for Gulf and Saudi stocks.",
       tags: [
-        "Security Testing",
-        "API Testing",
-        "Automation Testing",
-        "Selenium",
+        "Test Automation",
+        "Web Testing",
         "Performance Testing",
+        "Selenium",
+        "Flask",
       ],
-      link: "https://multilip.com",
-      image: img7,
+      link: "https://www.argaamcharts.com/ar/1120",
+      image: img10,
     },
+
     {
       id: 8,
       title: "Highclass – Brand Expansion & Digital Retail Integration Project",
@@ -211,7 +214,7 @@ const ProjectsPage = () => {
         .animate-float12 { animation: float12 24s ease-in-out infinite; }
       `}</style>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl">
+      <div className="mx-auto px-4 sm:px-6 relative z-10 max-w-9xl container">
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">

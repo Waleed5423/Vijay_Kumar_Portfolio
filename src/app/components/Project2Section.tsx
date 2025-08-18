@@ -14,21 +14,6 @@ import img10 from "../../app/media/image10.png";
 const Project2Section = () => {
   const projects = [
     {
-      id: 1,
-      title: "Argaam – Saudi Financial Markets & News",
-      description:
-        "Argaam (English) is a premier Saudi-based financial news portal offering real-time market data, analysis, interviews, and coverage of stocks across the Gulf region.",
-      tags: [
-        "Test Automation",
-        "Web Testing",
-        "Selenium",
-        "Flask",
-        "Performance Testing",
-      ],
-      link: "https://www.argaam.com/en",
-      image: img9,
-    },
-    {
       id: 5,
       title: "HERFA – Build Smarter, Build Faster with Digital Construction",
       description:
@@ -59,6 +44,37 @@ const Project2Section = () => {
       image: img10,
     },
     {
+      id: 6,
+      title: "MULTILIP – Where Investments Multiply with Confidence",
+      description:
+        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
+      tags: [
+        "Security Testing",
+        "API Testing",
+        "Automation Testing",
+        "Selenium",
+        "Performance Testing",
+      ],
+      link: "https://multilip.com", // Replace with actual link if different
+      image: img7,
+    },
+    {
+      id: 1,
+      title: "Argaam – Saudi Financial Markets & News",
+      description:
+        "Argaam (English) is a premier Saudi-based financial news portal offering real-time market data, analysis, interviews, and coverage of stocks across the Gulf region.",
+      tags: [
+        "Test Automation",
+        "Web Testing",
+        "Selenium",
+        "Flask",
+        "Performance Testing",
+      ],
+      link: "https://www.argaam.com/en",
+      image: img9,
+    },
+
+    {
       id: 3,
       title: "Contractor Foreman – Construction Management Software",
       description:
@@ -87,22 +103,6 @@ const Project2Section = () => {
       ],
       link: "https://oyah.com/index.html",
       image: img5,
-    },
-
-    {
-      id: 6,
-      title: "MULTILIP – Where Investments Multiply with Confidence",
-      description:
-        "MULTILIP is a stock investment company helping beginners and experienced investors with expert insights, data-driven strategies, and personalized portfolio management for both short-term and long-term gains.",
-      tags: [
-        "Security Testing",
-        "API Testing",
-        "Automation Testing",
-        "Selenium",
-        "Performance Testing",
-      ],
-      link: "https://multilip.com", // Replace with actual link if different
-      image: img7,
     },
   ];
 
