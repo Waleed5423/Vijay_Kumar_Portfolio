@@ -15,54 +15,41 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       icon: TestTube,
-      title: "Testing Methodologies",
+      title: "Testing & QA Methodologies",
       color: "from-purple-500 to-indigo-500",
       skills: [
         { name: "Manual Testing", level: 95 },
-        { name: "Test Automation", level: 90 },
         { name: "API Testing", level: 92 },
-        { name: "Performance Testing", level: 85 },
-        { name: "Security Testing", level: 80 },
+        { name: "Agile/Scrum", level: 92 },
+        { name: "SQL/Database Testing", level: 90 },
         { name: "Mobile Testing", level: 88 },
+        { name: "Performance Testing", level: 85 },
       ],
     },
     {
       icon: Code,
-      title: "Automation Tools",
+      title: "Automation & Technical Skills",
       color: "from-emerald-500 to-teal-500",
       skills: [
-        { name: "Selenium WebDriver", level: 90 },
-        { name: "Cypress", level: 85 },
         { name: "Postman/Newman", level: 92 },
-        { name: "Appium", level: 80 },
-        { name: "JMeter", level: 85 },
+        { name: "Selenium WebDriver", level: 90 },
         { name: "REST Assured", level: 88 },
-      ],
-    },
-    {
-      icon: Database,
-      title: "Technical Skills",
-      color: "from-amber-500 to-orange-500",
-      skills: [
-        { name: "SQL/Database Testing", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "Git/Version Control", level: 92 },
-        { name: "CI/CD Pipelines", level: 85 },
-        { name: "Docker/Kubernetes", level: 75 },
+        { name: "Java", level: 85 },
+        { name: "JMeter", level: 85 },
+        { name: "Appium", level: 80 },
       ],
     },
     {
       icon: Cloud,
-      title: "Platforms & Frameworks",
+      title: "Tools, Platforms & Frameworks",
       color: "from-rose-500 to-pink-500",
       skills: [
         { name: "JIRA/Confluence", level: 95 },
+        { name: "Click Up", level: 95 },
         { name: "TestRail", level: 88 },
         { name: "Jenkins", level: 85 },
         { name: "AWS/Cloud Testing", level: 80 },
-        { name: "Agile/Scrum", level: 92 },
-        { name: "DevOps Practices", level: 78 },
+        { name: "Slack/MS Team", level: 80 },
       ],
     },
   ];
@@ -79,7 +66,7 @@ const SkillsSection = () => {
     {
       icon: Target,
       color: "bg-purple-600",
-      bgColor: "bg-purple-50",
+      bgColor: "bg-purple-100",
       metric: "99.5%",
       label: "Test Coverage Achievement",
       description: "Consistently achieved high test coverage across projects",
@@ -103,7 +90,7 @@ const SkillsSection = () => {
     {
       icon: CheckCircle2,
       color: "bg-blue-600",
-      bgColor: "bg-blue-50",
+      bgColor: "bg-blue-100",
       metric: "150+",
       label: "Projects Delivered",
       description: "Successfully delivered quality software solutions",
@@ -113,7 +100,7 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="relative py-17 pb-10 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
+      className="relative py-17 pb-15 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -125,7 +112,7 @@ const SkillsSection = () => {
         <div className="absolute bottom-1/4 left-1/6 w-9 h-9 bg-indigo-400/15 rounded-full animate-float5"></div>
         <div className="absolute top-1/4 right-1/3 w-4 h-4 bg-purple-400/15 rounded-full animate-float6"></div>
         <div className="absolute top-2/3 left-2/3 w-6 h-6 bg-pink-400/20 rounded-full animate-float7"></div>
-        <div className="absolute bottom-2/3 right-1/4 w-5 h-5 bg-teal-400/20 rounded-full animate-float8"></div>
+        <div className="absolute bottom-0.5/3 left-1/3 w-20 h-20 bg-teal-400/10 rounded-full animate-float8"></div>
         <div className="absolute top-3/6 left-3/4 w-7 h-7 bg-yellow-400/15 rounded-full animate-float9"></div>
         <div className="absolute bottom-1/3 right-2/5 w-8 h-8 bg-rose-400/80 rounded-full animate-float10"></div>
         <div className="absolute top-4/5 left-1/5 w-6 h-6 bg-emerald-400/15 rounded-full animate-float11"></div>
@@ -191,7 +178,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Skill Categories Grid */}
-        <div className="grid lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid lg:grid-cols-3 gap-6 mb-16">
           {skillCategories.map((category, index) => (
             <Card
               key={index}
@@ -225,7 +212,7 @@ const SkillsSection = () => {
                     </div>
                     <Progress
                       value={skill.level}
-                      className={`h-2 bg-slate-200/70 group-hover:bg-gray-400 transition-colors duration-300 rounded-full animate-progress-pulse`}
+                      className={`h-2 bg-slate-200/70 group-hover:bg-gray-300/70 transition-colors duration-300 rounded-full animate-progress-pulse`}
                     />
                   </div>
                 ))}
@@ -236,17 +223,17 @@ const SkillsSection = () => {
 
         {/* Achievements */}
         <div>
-          <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center">
-            <span className="relative inline-block">
-              <span className="relative z-10">Key Achievements</span>
-              <span className="absolute bottom-0 left-0 w-full h-2 bg-indigo-100/70 -z-0 transform translate-y-1/2 animate-underline-expand"></span>
-            </span>
-          </h3>
+          <div className="text-center mb-6">
+            <h3 className="text-xl md:text-2xl font-bold text-primary mb-2">
+              Key Achievements
+            </h3>
+            <div className="w-26 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto"></div>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {achievements.map((achievement, index) => (
               <Card
                 key={index}
-                className={`${achievement.bgColor} hover:shadow-3xl transition-all duration-300 hover:-translate-y-1 backdrop-blur-xl border border-slate-200/50 shadow-xl shadow-slate-200/30 rounded-2xl p-6 text-center group`}
+                className={`${achievement.bgColor} hover:shadow-3xl hover:shadow-slate-300/50 shadow-lg transition-all duration-300 hover:-translate-y-1 backdrop-blur-xl border border-slate-200/50 shadow-xl shadow-slate-200/30 rounded-2xl p-6 text-center group`}
               >
                 <div
                   className={`p-4 rounded-full ${achievement.color}/10 text-${achievement.color} w-fit mx-auto mb-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-md`}

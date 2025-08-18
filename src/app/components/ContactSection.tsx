@@ -76,7 +76,7 @@ const ContactSection = () => {
         <div className="text-center mb-16 max-w-3xl">
           <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Get In Touch
+              Hire Me
             </span>
           </h2>
           <p className="text-slate-600 text-lg">

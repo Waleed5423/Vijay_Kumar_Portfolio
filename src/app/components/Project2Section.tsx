@@ -8,6 +8,8 @@ import img3 from "../../app/media/image2.png";
 import img5 from "../../app/media/image4.png";
 import img6 from "../../app/media/image5.png";
 import img7 from "../../app/media/image6.png";
+import img9 from "../../app/media/image9.png";
+import img10 from "../../app/media/image10.png";
 
 const Project2Section = () => {
   const projects = [
@@ -24,9 +26,23 @@ const Project2Section = () => {
         "Performance Testing",
       ],
       link: "https://www.argaam.com/en",
-      image: img,
+      image: img9,
     },
-
+    {
+      id: 5,
+      title: "HERFA – Build Smarter, Build Faster with Digital Construction",
+      description:
+        "HERFA is an online construction platform for contractors, builders, and project managers, offering real-time project tracking, material management, collaboration tools, and automated estimates to boost efficiency and cut costs.",
+      tags: [
+        "API Testing",
+        "UI Testing",
+        "Integration Testing",
+        "Selenium",
+        "Performance Testing",
+      ],
+      link: "https://herfa.com",
+      image: img6,
+    },
     {
       id: 2,
       title: "Argaam Charts – Financial Market Charts (Arabic)",
@@ -40,7 +56,7 @@ const Project2Section = () => {
         "Flask",
       ],
       link: "https://www.argaamcharts.com/ar/1120",
-      image: img2,
+      image: img10,
     },
     {
       id: 3,
@@ -72,21 +88,7 @@ const Project2Section = () => {
       link: "https://oyah.com/index.html",
       image: img5,
     },
-    {
-      id: 5,
-      title: "HERFA – Build Smarter, Build Faster with Digital Construction",
-      description:
-        "HERFA is an online construction platform for contractors, builders, and project managers, offering real-time project tracking, material management, collaboration tools, and automated estimates to boost efficiency and cut costs.",
-      tags: [
-        "API Testing",
-        "UI Testing",
-        "Integration Testing",
-        "Selenium",
-        "Performance Testing",
-      ],
-      link: "https://herfa.com",
-      image: img6,
-    },
+
     {
       id: 6,
       title: "MULTILIP – Where Investments Multiply with Confidence",
@@ -107,7 +109,7 @@ const Project2Section = () => {
   return (
     <section
       id="projects"
-      className="relative py-17 pb-10 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
+      className="relative py-17 pb-15 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -143,7 +145,7 @@ const Project2Section = () => {
         @keyframes float10 { 0%, 100% { transform: translate(0,0) rotate(0deg);} 50% { transform: translate(30px,25px) rotate(-3deg);} }
         @keyframes float11 { 0%, 100% { transform: translate(0,0) rotate(0deg);} 50% { transform: translate(-25px,-30px) rotate(7deg);} }
         @keyframes float12 { 0%, 100% { transform: translate(0,0) rotate(0deg);} 50% { transform: translate(24px,20px) rotate(-4deg);} }
-        @keyframes cardHover { 0% { transform: translateY(0); } 50% { transform: translateY(-5px); } 100% { transform: translateY(0); } }
+        @keyframes cardHover { 0% { transform: translateY(0); } 100% { transform: translateY(-5px); } }
 
         .animate-float1 { animation: float1 19s ease-in-out infinite; }
         .animate-float2 { animation: float2 14s ease-in-out infinite; }
@@ -175,8 +177,7 @@ const Project2Section = () => {
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
       `}</style>
-
-      <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7.5xl">
+      <div className="mx-auto px-4 sm:px-6 relative z-10 max-w-9xl container">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4 animate-fadeIn">
             <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -189,11 +190,11 @@ const Project2Section = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="project-card hover:z-10 transition-all rounded-xl duration-300"
+              className="project-card hover:z-10 transition-all rounded-lg duration-300"
             >
               <ProjectCard project={project} />
             </div>

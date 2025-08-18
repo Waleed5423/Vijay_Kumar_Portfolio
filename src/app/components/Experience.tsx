@@ -4,52 +4,57 @@ import { Badge } from "@/components/ui/badge";
 const Experience = () => {
   const experiences = [
     {
-      company: "Argaam.com",
-      position: "Senior SQA Engineer",
-      duration: "Aug 2023 – Present",
-      location: "Saudi Arabia (Remote)",
+      company: "Danat FZ LLC (owned by Argaam)",
+      position: "SQA Engineer",
+      duration: "Jan 2023 - Present",
+      location: "Karāchi, Sindh, Pakistan (On-site)",
       description:
-        "Leading quality assurance initiatives for financial data platforms. Specializing in test automation, performance testing, and CI/CD pipeline integration for financial technology applications.",
+        "Conducting quality assurance for mobile and web applications, ensuring software reliability through comprehensive testing methodologies.",
       achievements: [
-        "Developed comprehensive test automation frameworks",
-        "Implemented performance testing strategies for high-traffic financial applications",
-        "Integrated QA processes into CI/CD pipelines",
-        "Designed scalable test infrastructure on AWS",
+        "Conducted thorough manual testing for Android/iOS apps, responsive web, and desktop applications",
+        "Regularly updated test progress and roadblocks to QA Lead, ensuring project alignment",
+        "Executed database validations with SQL for back-end data accuracy",
+        "Collaborated in refining software requirements and contributed to release roadmaps",
+        "Authored detailed bug reports and QA documentation for traceability",
+        "Actively participated in Agile ceremonies and sprint planning discussions",
       ],
-      bgColor: "bg-green-50", // Light green
+      bgColor: "bg-green-50",
       borderColor: "border-green-100",
       shadowColor: "shadow-green-100/40",
     },
     {
-      company: "Intellectuals",
+      company: "Danat Forward Productions",
       position: "SQA Engineer",
-      duration: "2021 – 2023",
-      location: "Karachi, Pakistan",
+      duration: "Jul 2019 - Dec 2022",
+      location: "Karāchi, Sindh, Pakistan",
       description:
-        "Developed end-to-end testing solutions focusing on both manual and automated testing approaches. Built robust test pipelines and optimized testing processes for production environments.",
+        "Ensured software quality through systematic testing processes and collaboration with development teams.",
       achievements: [
-        "Created automated test suites for web applications",
-        "Implemented comprehensive regression testing strategies",
-        "Developed API testing solutions for backend services",
-        "Optimized test execution times through parallel testing",
+        "Designed and executed detailed test cases for mobile and web platforms",
+        "Ensured smooth functionality through continuous regression and sanity testing",
+        "Logged reproducible bugs using tracking tools like JIRA and coordinated resolutions",
+        "Partnered with cross-functional teams to improve quality during product lifecycles",
+        "Maintained evolving test documentation aligned with updated features",
       ],
-      bgColor: "bg-indigo-50", // Light indigo
+      bgColor: "bg-indigo-50",
       borderColor: "border-indigo-100",
       shadowColor: "shadow-indigo-100/40",
     },
     {
       company: "Contractor Foreman",
-      position: "Quality Assurance Consultant",
-      duration: "May 2022 – Present",
-      location: "Remote",
+      position: "SQA Engineer",
+      duration: "Jun 2018 - Jul 2019",
+      location: "Karachi, Pakistan",
       description:
-        "Providing QA consulting services for construction management software, ensuring quality and reliability in enterprise software applications.",
+        "Performed quality assurance for early-stage features and contributed to product improvement cycles.",
       achievements: [
-        "Established QA best practices for development team",
-        "Implemented test automation for critical workflows",
-        "Reduced production defects by 40% through improved testing",
+        "Tested early-stage feature sets through exploratory and structured test cases",
+        "Identified usability and critical issues before beta releases, enhancing user satisfaction",
+        "Submitted precise and traceable defect logs, accelerating fix cycles",
+        "Supported developers by verifying resolved bugs before production deployment",
+        "Contributed to QA feedback loops for continuous product improvement",
       ],
-      bgColor: "bg-orange-50", // Light orange
+      bgColor: "bg-orange-50",
       borderColor: "border-orange-100",
       shadowColor: "shadow-orange-100/40",
     },
@@ -117,7 +122,6 @@ const Experience = () => {
                     to { opacity: 1; transform: translateY(0); }
                 }
             `}</style>
-
       <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold tracking-tight mb-4 animate-fadeIn">
@@ -146,7 +150,7 @@ const Experience = () => {
               ></div>
 
               <Card
-                className={`${exp.bgColor} ${exp.borderColor} backdrop-blur-xl border border-opacity-50 shadow-lg ${exp.shadowColor} rounded-2xl p-6 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl relative overflow-hidden`}
+                className={`${exp.bgColor} ${exp.borderColor} backdrop-blur-xl border border-opacity-50 shadow-lg  rounded-2xl p-6 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl relative overflow-hidden`}
               >
                 {/* Animated border on hover */}
                 <div
@@ -173,7 +177,7 @@ const Experience = () => {
                           {exp.company}
                         </p>
                       </div>
-                      <div className="flex flex-col md:items-end gap-1">
+                      <div className="flex flex-row md:flex-col md:items-end gap-1">
                         <Badge className="bg-blue-50 text-blue-700 border border-blue-200 hover:bg-blue-100 transition-all duration-300 group-hover:shadow-md group-hover:shadow-blue-100/30">
                           {exp.duration}
                         </Badge>
@@ -191,13 +195,13 @@ const Experience = () => {
                       <h4 className="text-lg font-semibold text-slate-800 mb-3 group-hover:text-slate-900 transition-colors duration-300">
                         Key Responsibilities:
                       </h4>
-                      <ul className="space-y-2">
+                      <ul className="space-y-1.5">
                         {exp.achievements.map((achievement, idx) => (
                           <li
                             key={idx}
                             className="flex items-start transition-all duration-200 hover:translate-x-1"
                           >
-                            <span className="mr-2 mt-1 text-blue-600 group-hover:text-indigo-600 transition-colors duration-300">
+                            <span className="mr-2 mb-0.5 text-blue-600 group-hover:text-indigo-600 transition-colors duration-300">
                               •
                             </span>
                             <span className="text-slate-700 group-hover:text-slate-800 transition-colors duration-300">

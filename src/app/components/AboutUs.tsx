@@ -97,7 +97,7 @@ const AboutUs = () => {
                     software is bug-free and user-centric.
                   </p>
                   <div className="space-y-6">
-                    <div>
+                    {/* <div>
                       <h3 className="text-2xl font-semibold mb-4 text-slate-800 hover:text-blue-600 transition-colors duration-300">
                         Key Strengths
                       </h3>
@@ -123,7 +123,7 @@ const AboutUs = () => {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </div> */}
                     <div>
                       <h3 className="text-2xl font-semibold mb-4 text-slate-800 hover:text-indigo-600 transition-colors duration-300">
                         Professional Approach
@@ -261,7 +261,7 @@ const AboutUs = () => {
                     </div>
 
                     {/* New Section: Certifications */}
-                    <div className="space-y-3">
+                    {/* <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <div className="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
                         <h4 className="font-bold text-slate-800 text-base sm:text-lg">
@@ -288,10 +288,10 @@ const AboutUs = () => {
                           </span>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* New Section: Testing Coverage */}
-                    <div className="space-y-3">
+                    {/* <div className="space-y-3">
                       <div className="flex items-center gap-3">
                         <div className="w-3 h-3 bg-amber-500 rounded-full animate-pulse"></div>
                         <h4 className="font-bold text-slate-800 text-base sm:text-lg">
@@ -319,7 +319,7 @@ const AboutUs = () => {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
