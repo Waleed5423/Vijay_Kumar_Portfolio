@@ -19,13 +19,17 @@ const Footer = () => {
               methodologies and automation expertise.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com/VijayDvaswani">
-                <Button size="icon" variant="default" className="bg-gray-200 ">
-                  <Github className="h-4 w-4 text-gray-800 hover:text-gray-100" />
+              <a href="https://github.com/VijayDvaswani" className="group">
+                <Button
+                  size="icon"
+                  variant="default"
+                  className="bg-gray-200 hover:bg-gray-800"
+                >
+                  <Github className="h-4 w-4 text-gray-800 group-hover:text-white" />
                 </Button>
               </a>
               <a href="https://www.linkedin.com/in/vijaykumarvaswani/">
-                <Button size="icon" variant="default" className="bg-blue-800">
+                <Button size="icon" variant="default" className="bg-blue-500">
                   <Linkedin className="h-4 w-4 " />
                 </Button>
               </a>
